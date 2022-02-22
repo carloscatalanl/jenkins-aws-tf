@@ -4,7 +4,7 @@ resource "aws_instance" "ec2-jenkins" {
   subnet_id = var.public_subnets.id
   vpc_security_group_ids = [aws_security_group.public_sg.id]
   key_name = aws_key_pair.key_access.key_name
-  user_data = file("${path.module}/src/start.sh")
+  user_data = "${file("${path.module}/src/start.sh")}"
   associate_public_ip_address = true
 
   lifecycle {

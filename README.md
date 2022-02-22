@@ -14,7 +14,7 @@ aws_secret_access_key=YOUR_SECRET_ACCESS_KEY
 
 ### Connecting to your Linux instance using SSH
 ```sh
-ssh -i ./private/ssh/key_access.pem -A ubuntu@[instance IP]
+ssh -i ./private/ssh/key_access -A ubuntu@[instance IP]
 ```
 
 ## Destroy
