@@ -17,6 +17,11 @@ aws_secret_access_key=YOUR_SECRET_ACCESS_KEY
 ssh -i ./private/ssh/key_access -A ubuntu@[instance IP]
 ```
 
+### Connecting to the Jenkins service in the browser 
+```sh
+[instance IP]:8080
+```
+
 ## Destroy
 ```sh
 ./down.sh
